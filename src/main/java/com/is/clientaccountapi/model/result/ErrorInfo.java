@@ -1,0 +1,15 @@
+package com.is.clientaccountapi.model.result;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.util.List;
+
+@Getter
+@Builder
+public class ErrorInfo {
+    private Integer code;
+    private String message;
+    private String cause;
+    private List<String> fields;
+}
