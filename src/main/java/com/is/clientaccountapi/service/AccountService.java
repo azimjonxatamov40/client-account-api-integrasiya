@@ -149,7 +149,6 @@ public class AccountService {
         if (checkRequest.isInvalidId(id)) {
             return ApiResponse.error(ErrorCode.INVALID_PARAM, "id");
         }
-
         try {
             AccountInfo account = getAccount(id);
             if (account == null) {

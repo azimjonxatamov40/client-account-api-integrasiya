@@ -61,3 +61,7 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2026-11-20 10:30:59 [http-nio-8080-exec-3] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
 2026-11-20 10:32:31 [http-nio-8080-exec-6] INFO  c.i.c.controller.AccountController - CloseAccount start: id: 5
 2026-11-20 10:32:40 [http-nio-8080-exec-8] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 52445654904234
+2026-11-20 10:45:47 [http-nio-8080-exec-10] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
+2026-11-20 10:46:08 [http-nio-8080-exec-1] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
+2026-11-20 10:46:10 [http-nio-8080-exec-2] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
+2026-11-20 11:36:10 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=9m43s211ms).
