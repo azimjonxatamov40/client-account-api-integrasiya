@@ -35,6 +35,12 @@ public class AccountController {
         return accountService.getClientAccounts(clientId).toResponse();
     }
 
+    @GetMapping("/accounts/{id}")
+    public ResponseEntity<ApiResponse<AccountInfo>> getAccountById(@PathVariable Long id) {
+        log.info("GetAccountById start: id: {}", id);
+        return accountService.getAccountById(id).toResponse();
+    }
+
     @PostMapping("/accounts/{id}/deposit")
     public ResponseEntity<ApiResponse<AccountInfo>> deposit(@PathVariable Long id,
                                                             @RequestBody DepositRequest request) {

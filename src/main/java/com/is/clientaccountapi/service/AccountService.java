@@ -28,7 +28,12 @@ import java.util.Map;
 @Service
 @RequiredArgsConstructor
 public class AccountService {
-    private final JdbcTemplate jdbcTemplate;
+
+
+
+
+
+   private final JdbcTemplate jdbcTemplate;
     private final CheckRequest checkRequest;
     private final ClientService clientService;
 
@@ -135,6 +140,23 @@ public class AccountService {
                     " order by a.id", ACCOUNT_MAPPER, clientId);
 
             return ApiResponse.ok(accounts, 200);
+        } catch (Exception e) {
+            return checkRequest.dbError(e);
+        }
+    }
+
+    public ApiResponse<AccountInfo> getAccountById(Long id) {
+        if (checkRequest.isInvalidId(id)) {
+            return ApiResponse.error(ErrorCode.INVALID_PARAM, "id");
+        }
+
+        try {
+            AccountInfo account = getAccount(id);
+            if (account == null) {
+                return ApiResponse.error(ErrorCode.ACC_NOT_FOUND, "id");
+            }
+
+            return ApiResponse.ok(account, 200);
         } catch (Exception e) {
             return checkRequest.dbError(e);
         }
