@@ -29,10 +29,6 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class AccountService {
 
-
-
-
-
     private final JdbcTemplate jdbcTemplate;
     private final CheckRequest checkRequest;
     private final ClientService clientService;
@@ -214,9 +210,7 @@ public class AccountService {
         }
 
         try {
-            Integer count = jdbcTemplate.queryForObject(
-                    "select count(*) from cm_account a where a.id = ?", Integer.class, id);
-            if (count == null || count == 0) {
+            if (getAccount(id) == null) {
                 return ApiResponse.error(ErrorCode.ACC_NOT_FOUND, "id");
             }
 

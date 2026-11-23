@@ -65,3 +65,34 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2026-11-20 10:46:08 [http-nio-8080-exec-1] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
 2026-11-20 10:46:10 [http-nio-8080-exec-2] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
 2026-11-20 11:36:10 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=9m43s211ms).
+2026-11-20 12:09:04 [http-nio-8080-exec-4] INFO  c.i.c.controller.AccountController - Deposit start: id: 23, amount: 10000
+2026-11-20 12:09:05 [http-nio-8080-exec-4] INFO  c.i.c.service.AccountService - Deposit: accountId: 23, amount: 10000
+2026-11-20 12:10:39 [http-nio-8080-exec-7] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 948383834838438
+2026-11-20 12:10:58 [http-nio-8080-exec-10] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 112323232323212
+2026-11-20 12:11:12 [http-nio-8080-exec-2] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 94839392939293
+2026-11-20 12:11:12 [http-nio-8080-exec-2] INFO  c.i.c.service.ClientService - Client created: id: 62, pinfl: 94839392939293
+2026-11-20 12:34:08 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=15m28s98ms).
+2026-11-20 14:12:57 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=5m46s956ms).
+2026-11-20 14:44:20 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=28m53s373ms).
+2026-11-20 15:53:20 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Retrograde clock change detected (housekeeper delta=29s808ms), soft-evicting connections from pool.
+2026-11-20 17:23:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
+2026-11-20 17:23:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.
+2026-11-20 17:23:46 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 17.0.20.1 on MacBook-Air-Uzmacboko.local with PID 20972 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
+2026-11-20 17:23:46 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-20 17:23:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-11-20 17:23:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-20 17:23:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-11-20 17:23:46 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-20 17:23:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 303 ms
+2026-11-20 17:23:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-11-20 17:23:46 [main] INFO  c.i.c.ClientAccountApiApplication - Started ClientAccountApiApplication in 5.612 seconds (JVM running for 5.733)
+2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  c.i.c.c.ClientAccountController - CreateClient start: pinfl: 94859392939293
+2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Starting...
+2026-11-20 17:24:03 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Start completed.
+2026-11-20 17:24:06 [http-nio-8080-exec-2] INFO  c.i.c.service.ClientService - Client created: id: 63, pinfl: 94859392939293
+2026-11-20 17:56:09 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=16m35s839ms).
+2026-11-20 18:06:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
+2026-11-20 18:07:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.

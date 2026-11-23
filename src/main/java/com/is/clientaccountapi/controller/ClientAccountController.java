@@ -6,8 +6,11 @@ import com.is.clientaccountapi.model.account.DepositRequest;
 import com.is.clientaccountapi.model.account.OperationInfo;
 import com.is.clientaccountapi.model.account.TransferRequest;
 import com.is.clientaccountapi.model.account.TransferResult;
+import com.is.clientaccountapi.model.client.ClientInfo;
+import com.is.clientaccountapi.model.client.ClientRequest;
 import com.is.clientaccountapi.model.result.ApiResponse;
 import com.is.clientaccountapi.service.AccountService;
+import com.is.clientaccountapi.service.ClientService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -19,8 +22,42 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 @RequiredArgsConstructor
-public class AccountController {
+public class ClientAccountController {
+    private final ClientService clientService;
     private final AccountService accountService;
+
+    @PostMapping("/clients")
+    public ResponseEntity<ApiResponse<ClientInfo>> createClient(@RequestBody ClientRequest request) {
+        log.info("CreateClient start: pinfl: {}", request.getPinfl());
+        return clientService.createClient(request).toResponse();
+    }
+
+    @GetMapping("/clients")
+    public ResponseEntity<ApiResponse<List<ClientInfo>>> getClients(@RequestParam(required = false) Integer page,
+                                                                    @RequestParam(required = false) Integer size,
+                                                                    @RequestParam(required = false) String search) {
+        log.info("GetClients start: page: {}, size: {}, search: {}", page, size, search);
+        return clientService.getClients(page, size, search).toResponse();
+    }
+
+    @GetMapping("/clients/{id}")
+    public ResponseEntity<ApiResponse<ClientInfo>> getClientById(@PathVariable Long id) {
+        log.info("GetClientById start: id: {}", id);
+        return clientService.getClientById(id).toResponse();
+    }
+
+    @PutMapping("/clients/{id}")
+    public ResponseEntity<ApiResponse<ClientInfo>> updateClient(@PathVariable Long id,
+                                                                @RequestBody ClientRequest request) {
+        log.info("UpdateClient start: id: {}", id);
+        return clientService.updateClient(id, request).toResponse();
+    }
+
+    @DeleteMapping("/clients/{id}")
+    public ResponseEntity<ApiResponse<Boolean>> deleteClient(@PathVariable Long id) {
+        log.info("DeleteClient start: id: {}", id);
+        return clientService.deleteClient(id).toResponse();
+    }
 
     @PostMapping("/clients/{clientId}/accounts")
     public ResponseEntity<ApiResponse<AccountInfo>> openAccount(@PathVariable Long clientId,
