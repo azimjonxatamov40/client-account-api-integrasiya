@@ -1,98 +1,78 @@
-2026-11-20 00:29:41 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=1h15m821ms).
-2026-11-20 01:21:17 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=51m36s655ms).
-2026-11-20 02:45:42 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=1h24m25s219ms).
-2026-11-20 04:04:14 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=1h18m31s972ms).
-2026-11-20 05:19:41 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=1h15m27s21ms).
-2026-11-20 06:40:00 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=1h20m18s830ms).
-2026-11-20 07:50:45 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=1h10m44s972ms).
-2026-11-20 09:08:19 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=1h17m34s229ms).
-2026-11-20 09:49:36 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=41m16s301ms).
-2026-11-20 09:50:06 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Retrograde clock change detected (housekeeper delta=29s711ms), soft-evicting connections from pool.
-2026-11-20 09:55:25 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=4m19s934ms).
-2026-11-20 10:04:57 [http-nio-8080-exec-7] INFO  c.i.c.controller.AccountController - OpenAccount start: clientId: 13
-2026-11-20 10:04:57 [http-nio-8080-exec-7] INFO  c.i.c.service.AccountService - Account opened: id: 124, number: 12505000000000013003
-2026-11-20 10:29:03 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 21.0.13.0.2 on MacBook-Air-Uzmacboko.local with PID 19086 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
-2026-11-20 10:29:03 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
-2026-11-20 10:29:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2026-11-20 10:29:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-11-20 10:29:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
-2026-11-20 10:29:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-11-20 10:29:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 292 ms
-2026-11-20 10:29:03 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2026-11-20 10:29:03 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-11-20 10:29:03 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2026-11-20 10:29:03 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2026-11-20 10:29:59 [http-nio-8080-exec-10] INFO  c.i.c.controller.ClientController - GetClients start: page: null, size: null, search: null
-2026-11-20 10:30:09 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 21.0.13.0.2 on MacBook-Air-Uzmacboko.local with PID 19134 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
-2026-11-20 10:30:09 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
-2026-11-20 10:30:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2026-11-20 10:30:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-11-20 10:30:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
-2026-11-20 10:30:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-11-20 10:30:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 255 ms
-2026-11-20 10:30:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2026-11-20 10:30:10 [main] INFO  c.i.c.ClientAccountApiApplication - Started ClientAccountApiApplication in 5.568 seconds (JVM running for 5.666)
-2026-11-20 10:30:13 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-11-20 10:30:13 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-11-20 10:30:13 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2026-11-20 10:30:13 [http-nio-8081-exec-1] INFO  c.i.c.controller.ClientController - GetClients start: page: null, size: null, search: null
-2026-11-20 10:30:13 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Starting...
-2026-11-20 10:30:13 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Start completed.
-2026-11-20 10:30:13 [http-nio-8081-exec-2] INFO  c.i.c.controller.AccountController - GetClientAccounts start: clientId: 5
-2026-11-20 10:30:16 [http-nio-8081-exec-4] INFO  c.i.c.controller.AccountController - GetAccountById start: id: 2
-2026-11-20 10:30:16 [http-nio-8081-exec-6] INFO  c.i.c.controller.AccountController - GetAccountById start: id: 999999
-2026-11-20 10:30:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
-2026-11-20 10:30:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.
-2026-11-20 10:30:59 [http-nio-8080-exec-3] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
-2026-11-20 10:32:31 [http-nio-8080-exec-6] INFO  c.i.c.controller.AccountController - CloseAccount start: id: 5
-2026-11-20 10:32:40 [http-nio-8080-exec-8] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 52445654904234
-2026-11-20 10:45:47 [http-nio-8080-exec-10] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
-2026-11-20 10:46:08 [http-nio-8080-exec-1] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
-2026-11-20 10:46:10 [http-nio-8080-exec-2] INFO  c.i.c.controller.AccountController - GetOperations start: id: 23, from: null, to: null
-2026-11-20 11:36:10 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=9m43s211ms).
-2026-11-20 12:09:04 [http-nio-8080-exec-4] INFO  c.i.c.controller.AccountController - Deposit start: id: 23, amount: 10000
-2026-11-20 12:09:05 [http-nio-8080-exec-4] INFO  c.i.c.service.AccountService - Deposit: accountId: 23, amount: 10000
-2026-11-20 12:10:39 [http-nio-8080-exec-7] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 948383834838438
-2026-11-20 12:10:58 [http-nio-8080-exec-10] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 112323232323212
-2026-11-20 12:11:12 [http-nio-8080-exec-2] INFO  c.i.c.controller.ClientController - CreateClient start: pinfl: 94839392939293
-2026-11-20 12:11:12 [http-nio-8080-exec-2] INFO  c.i.c.service.ClientService - Client created: id: 62, pinfl: 94839392939293
-2026-11-20 12:34:08 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=15m28s98ms).
-2026-11-20 14:12:57 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=5m46s956ms).
-2026-11-20 14:44:20 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=28m53s373ms).
-2026-11-20 15:53:20 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Retrograde clock change detected (housekeeper delta=29s808ms), soft-evicting connections from pool.
-2026-11-20 17:23:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
-2026-11-20 17:23:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.
-2026-11-20 17:23:46 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 17.0.20.1 on MacBook-Air-Uzmacboko.local with PID 20972 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
-2026-11-20 17:23:46 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
-2026-11-20 17:23:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2026-11-20 17:23:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-11-20 17:23:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
-2026-11-20 17:23:46 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-11-20 17:23:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 303 ms
-2026-11-20 17:23:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2026-11-20 17:23:46 [main] INFO  c.i.c.ClientAccountApiApplication - Started ClientAccountApiApplication in 5.612 seconds (JVM running for 5.733)
-2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  c.i.c.c.ClientAccountController - CreateClient start: pinfl: 94859392939293
-2026-11-20 17:23:57 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Starting...
-2026-11-20 17:24:03 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Start completed.
-2026-11-20 17:24:06 [http-nio-8080-exec-2] INFO  c.i.c.service.ClientService - Client created: id: 63, pinfl: 94859392939293
-2026-11-20 17:56:09 [CLIENT-ACCOUNT housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - CLIENT-ACCOUNT - Thread starvation or clock leap detected (housekeeper delta=16m35s839ms).
-2026-11-20 18:06:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
-2026-11-20 18:07:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.
+2026-11-23 09:49:22 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 17.0.20.1 on MacBook-Air-Uzmacboko.local with PID 1540 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
+2026-11-23 09:49:22 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-23 09:49:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-11-23 09:49:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-23 09:49:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-11-23 09:49:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-23 09:49:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 273 ms
+2026-11-23 09:49:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-11-23 09:49:23 [main] INFO  c.i.c.ClientAccountApiApplication - Started ClientAccountApiApplication in 5.612 seconds (JVM running for 5.734)
+2026-11-23 09:49:26 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-23 09:49:26 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-23 09:49:26 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-23 09:49:26 [http-nio-8080-exec-2] INFO  c.i.c.c.ClientAccountController - GetClientById start: id: 17
+2026-11-23 09:49:26 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Starting...
+2026-11-23 09:49:26 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Start completed.
+2026-11-23 11:21:16 [http-nio-8080-exec-5] INFO  c.i.c.c.ClientAccountController - GetClientById start: id: 12
+2026-11-23 11:21:25 [http-nio-8080-exec-6] INFO  c.i.c.c.ClientAccountController - GetClientById start: id: 33
+2026-11-23 12:05:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
+2026-11-23 12:05:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.
+2026-11-23 12:06:00 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 17.0.20.1 on MacBook-Air-Uzmacboko.local with PID 17111 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
+2026-11-23 12:06:00 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-23 12:06:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-11-23 12:06:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-23 12:06:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-11-23 12:06:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-23 12:06:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 354 ms
+2026-11-23 12:06:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-11-23 12:06:01 [main] INFO  c.i.c.ClientAccountApiApplication - Started ClientAccountApiApplication in 5.729 seconds (JVM running for 5.922)
+2026-11-23 12:11:34 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-23 12:11:34 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-23 12:11:34 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-23 12:11:34 [http-nio-8080-exec-2] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:11:34 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Starting...
+2026-11-23 12:11:40 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Start completed.
+2026-11-23 12:14:51 [http-nio-8080-exec-4] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:14:57 [http-nio-8080-exec-7] INFO  c.i.c.c.ClientAccountController - GetClientById start: id: 33
+2026-11-23 12:15:51 [http-nio-8080-exec-8] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:16:07 [http-nio-8080-exec-6] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:17:55 [http-nio-8080-exec-1] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:18:05 [http-nio-8080-exec-2] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:18:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
+2026-11-23 12:18:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.
+2026-11-23 12:18:22 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 17.0.20.1 on MacBook-Air-Uzmacboko.local with PID 18860 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
+2026-11-23 12:18:22 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-23 12:18:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-11-23 12:18:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-23 12:18:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-11-23 12:18:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-23 12:18:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 306 ms
+2026-11-23 12:18:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-11-23 12:18:22 [main] INFO  c.i.c.ClientAccountApiApplication - Started ClientAccountApiApplication in 5.618 seconds (JVM running for 5.762)
+2026-11-23 12:18:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-23 12:18:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-23 12:18:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-23 12:18:26 [http-nio-8080-exec-1] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:18:26 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Starting...
+2026-11-23 12:18:26 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Start completed.
+2026-11-23 12:18:35 [http-nio-8080-exec-3] INFO  c.i.c.c.ClientAccountController - GetClients start: page: null, size: null, search: null
+2026-11-23 12:19:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown initiated...
+2026-11-23 12:19:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Shutdown completed.
+2026-11-23 12:19:57 [main] INFO  c.i.c.ClientAccountApiApplication - Starting ClientAccountApiApplication using Java 17.0.20.1 on MacBook-Air-Uzmacboko.local with PID 18899 (/Users/uzmacboko/Desktop/client-account-api-main/build/classes/java/main started by uzmacboko in /Users/uzmacboko/Desktop/client-account-api-main)
+2026-11-23 12:19:57 [main] INFO  c.i.c.ClientAccountApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-23 12:19:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-11-23 12:19:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-23 12:19:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-11-23 12:19:57 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-23 12:19:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 281 ms
+2026-11-23 12:19:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-11-23 12:19:57 [main] INFO  c.i.c.ClientAccountApiApplication - Started ClientAccountApiApplication in 5.563 seconds (JVM running for 5.666)
+2026-11-23 12:19:59 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-23 12:19:59 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-23 12:19:59 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-11-23 12:19:59 [http-nio-8080-exec-2] INFO  c.i.c.c.ClientAccountController - GetClientById start: id: 33
+2026-11-23 12:19:59 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Starting...
+2026-11-23 12:20:00 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - CLIENT-ACCOUNT - Start completed.
+2026-11-23 12:20:06 [http-nio-8080-exec-3] INFO  c.i.c.c.ClientAccountController - GetClientById start: id: 33
+2026-11-23 12:21:18 [http-nio-8080-exec-5] INFO  c.i.c.c.ClientAccountController - CreateClient start: pinfl: 52445654901534
+2026-11-23 12:21:18 [http-nio-8080-exec-5] INFO  c.i.c.service.ClientService - Client created: id: 81, pinfl: 52445654901534
